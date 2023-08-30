@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "448786872753",
+    "project_id": "multiapp-29faf",
+    "storage_bucket": "multiapp-29faf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448786872753:android:6f7c84f87e3032517fe590",
+        "android_client_info": {
+          "package_name": "com.annaginagili.multiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448786872753-jhhb5uhrm6esgpbqol42dq70itpe83it.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.annaginagili.multiapp",
+            "certificate_hash": "086f642f25a2368ef80eca183a37ccdb4fabdcd1"
+          }
+        },
+        {
+          "client_id": "448786872753-6s3v4aksqavaubdfsrk5n8u005u61snv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBkYOYaXRgAnmdt3_qZZM_SRiFx_mPH7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448786872753-62akj7sjohls1nl2jnf5qr6mhibncvnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

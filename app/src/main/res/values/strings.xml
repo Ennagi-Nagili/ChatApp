@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MultiApp</string>
+    <string name="api_key">448786872753-6s3v4aksqavaubdfsrk5n8u005u61snv.apps.googleusercontent.com</string>
+    <string name="search">Search…</string>
+    <string name="chats">Chatrooms</string>
+    <string name="chatroom">Chatroom</string>
+    <string name="delete_chatroom">Delete chatroom</string>
+    <string name="new_user">New user</string>
+    <string name="team">Team</string>
+    <string name="full_access">Full access</string>
+    <string name="reglar_access">Reglar_access</string>
+</resources>

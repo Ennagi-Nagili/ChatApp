@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_back"
+    android:layout_marginTop="26dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile"
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/profile"
+        android:layout_marginStart="16dp"
+        android:text="Maciej Kowalski"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="08:43"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintLeft_toRightOf="@+id/profile"
+        android:layout_marginStart="16dp"
+        android:text="maciej.kowalski@email.com"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

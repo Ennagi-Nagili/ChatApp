@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_back">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile"
+            android:src="@drawable/profile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="51dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/profile"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="61dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Martina Wolna"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:background="@drawable/search_back"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:hint="@string/search"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:paddingStart="15dp"
+            android:paddingEnd="55dp"
+            android:paddingVertical="12dp"
+            android:lines="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_btn"
+            android:background="@drawable/search_btn"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:layout_constraintLeft_toRightOf="@id/search"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:background="@drawable/add_btn"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:layout_constraintLeft_toRightOf="@id/search_btn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/room"
+            app:layout_constraintTop_toBottomOf="@id/search"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/chats"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rooms"
+            app:layout_constraintTop_toBottomOf="@id/room"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chats"
+            app:layout_constraintTop_toBottomOf="@id/rooms"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="25dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

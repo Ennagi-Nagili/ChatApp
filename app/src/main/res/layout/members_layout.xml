@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_back"
+    android:layout_marginBottom="30dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Maciej Kowalski"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/full"
+        android:background="@drawable/full_btn"
+        android:text="@string/full_access"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reglar"
+        android:background="@drawable/reglar_btn"
+        android:text="@string/reglar_access"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/full"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:background="@drawable/delete_btn"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/reglar"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

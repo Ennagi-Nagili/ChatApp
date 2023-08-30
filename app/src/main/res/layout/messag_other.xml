@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="test2023@gmail.com"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        android:paddingStart="11dp"
+        android:paddingEnd="20dp"
+        android:paddingVertical="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:background="@drawable/message_back"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="I am almost finish. Please give me your email, I will ZIP them and send you as son as im finish."
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:paddingStart="11dp"
+        android:paddingEnd="20dp"
+        android:paddingVertical="10dp"
+        android:textAlignment="viewEnd"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
